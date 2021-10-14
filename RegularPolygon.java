@@ -11,7 +11,7 @@ public class RegularPolygon {
 	}
 	double getPerimeter() {
 		return numberOfSides * sideLength;
-    }
+        }
 	double getArea() {
 		return numberOfSides * sideLength * sideLength / (4 * Math.tan (Math.PI / numberOfSides));
     }
