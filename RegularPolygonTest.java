@@ -12,5 +12,4 @@ public class RegularPolygonTest {
 		input.close();
 
 	}
-
 }
