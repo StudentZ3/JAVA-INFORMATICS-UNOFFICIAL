@@ -6,10 +6,13 @@ public class RegularPolygonTest {
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner(System.in);
 		
+		RegularPolygon RP1 = new RegularPolygon();
+
 		
 		
 		
 		input.close();
 
 	}
+
 }
