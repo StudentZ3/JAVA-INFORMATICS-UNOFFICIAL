@@ -1,7 +1,6 @@
 package projectBattleshipGame;
 import java.util.Scanner;
 public class MyShips {
-	
 	public static final Scanner in = new Scanner(System.in);
 	public static String water = "~";
 	public static String ship = "X";
@@ -224,7 +223,7 @@ public class MyShips {
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Ship[] ships = new Ship[4];
+		/*Ship[] ships = new Ship[4];
 		ships[0] = new Cutter(33, 35, 34.5, 8.5, 150);
 		System.out.println(ships[0].toString() + "\nYou have 4 identical cutters with the shown parameters. \n");
 		ships[1] = new Corvette(70, 83, 29.5, 11.5, 30);
@@ -232,16 +231,17 @@ public class MyShips {
 		ships[2] = new Destroyer(340, 150, 25.3, 2, 17);
 		System.out.println(ships[2].toString() + "You have 2 identical destroyers with the shown parameters. \n");
 		ships[3] = new AircraftCarrier(2500, 330, 14.5, 12, 35);
-		System.out.println(ships[3].toString() + "You have 1 carrier with the shown parameters. \n");
-		
-		String[][] map = new String[10][10];
+		System.out.println(ships[3].toString() + "You have 1 carrier with the shown parameters. \n");*/
+		String[][] map = new String[11][11];
+		int Xvalues[] = new int[10];
+		int Yvalues[] = new int[10];
 		System.out.println("You have to positionize/arrange: \n" +
 		                   "  FOUR (4) cutters - single field; \n" + "  THREE (3) corvettes - double field; \n" + 
 				           "  TWO (2) destroyers - triple field; \n" + "  ONE (1) carrier - quadruple field \n" +
 				           "on a 10 X 10 grid map." + "\n");
-		importCutters(map);
-	    importCorvettes(map);
-		importDestroyers(map);
+		//importCutters(map);
+	    //importCorvettes(map);
+		//importDestroyers(map);
 		importCarrier(map);
 		System.out.println("Your ships on the map: \n");
 		
@@ -252,11 +252,15 @@ public class MyShips {
 			else System.out.printf(" " + "%3s",(char)(65+i));
 		}
 		System.out.println();
+		int numberOfRepeat = 0;
 		for(int i = 0; i < 10; i++) {
 			System.out.printf("%2d",(i+1));
 			for(int j = 0; j < 10; j++) {
 				if(map[i][j] == ship) {
 					System.out.printf("%4s", ship);
+					Xvalues[numberOfRepeat] = i;
+					Yvalues[numberOfRepeat] = j;
+					numberOfRepeat ++;
 				}
 				else System.out.printf("%4s", water);	
 			}
@@ -264,8 +268,38 @@ public class MyShips {
 			System.out.println();
 		}
 		System.out.println("Change players. Press 'ENTER': ");
+		try{System.in.read();}
+        catch(Exception e){};
 		for(int i = 0; i < 150; i ++) {
 			System.out.println();
+		}
+		for (int o = 0; o < 100; o ++) {
+			System.out.print("Enter the row coordiate of the cell you want to check for: ");
+			int row = in.nextInt();
+			System.out.print("Enter the column coordiate of the cell you want to check for: ");
+			int column = (int) in.next().charAt(0) % 65;
+			System.out.println();
+			for(int i = 0; i < 10; i++) {
+				if(i == 0) {
+					System.out.printf("%6s",(char)(65+i));
+				}
+				else System.out.printf(" " + "%3s",(char)(65+i));
+			}
+			System.out.println();
+			for(int i = 0; i < 10; i++) {
+				System.out.printf("%2d",(i+1));
+				for(int j = 0; j < 10; j++) {
+					if((i == row) && (j == column)) {
+						for(numberOfRepeat = 0; numberOfRepeat < 10; numberOfRepeat ++) {
+							
+						}
+						System.out.print(ship);
+					}
+					else System.out.print(" ");
+				}
+				System.out.println();
+				System.out.println();
+			}	
 		}
 		in.close();
 	}
