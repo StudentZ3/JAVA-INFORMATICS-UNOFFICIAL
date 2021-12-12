@@ -20,29 +20,29 @@ public class MyShips {
 			if(map[row + 1][column + 1] == ship) {
 			   System.out.println("Impossible positioning. Ships cannot touch at their angle points. Try again!");
 			   System.exit(0);
-		    }
+		        }
 		}
 		else if(row == 9 && column == 9) {
 			if(map[row - 1][column - 1] == ship) {
-		      System.out.println("Impossible positioning. Ships cannot touch at their angle points. Try again!");
-		      System.exit(0);
+		           System.out.println("Impossible positioning. Ships cannot touch at their angle points. Try again!");
+		           System.exit(0);
 			}
 		}
 		else if(row == 9 && column == 0) {
-			if(map[row - 1][column + 1] == ship) {
-			  System.out.println("Impossible positioning. Ships cannot touch at their angle points. Try again!");
-			  System.exit(0);
+		        if(map[row - 1][column + 1] == ship) {
+			   System.out.println("Impossible positioning. Ships cannot touch at their angle points. Try again!");
+			   System.exit(0);
 			}
 		}
-        else if(row == 0 && column == 9) {
-        	if(map[row + 1][column - 1] == ship) {
-  		      System.out.println("Impossible positioning. Ships cannot touch at their angle points. Try again!");
-  		      System.exit(0);
+                else if(row == 0 && column == 9) {
+        	        if(map[row + 1][column - 1] == ship) {
+  		           System.out.println("Impossible positioning. Ships cannot touch at their angle points. Try again!");
+  		           System.exit(0);
   			}
 		}
 	}
 	public static void checkSides(String map[][], int row, int column) {
-	   if((row > 0) && (column > 0) && (row < 9) && (column < 9)) {
+	       if((row > 0) && (column > 0) && (row < 9) && (column < 9)) {
 			if(map[row - 1][column] == ship||
 			   map[row][column + 1] == ship||  
 			   map[row][column - 1] == ship||
@@ -65,7 +65,7 @@ public class MyShips {
 			}
 			else map[r][k] = ship;
 			
-            checkSides(map, r, k);
+                        checkSides(map, r, k);
 			checkAnglePoints(map,r,k);
 			System.out.println();
 		}
@@ -224,7 +224,7 @@ public class MyShips {
 				System.exit(0);
 			}
 			else {
-				map[row2][(int)column2] = ship;
+			    map[row2][(int)column2] = ship;
 			    map[row3][(int)column3] = ship;	
 			}
 			checkAnglePoints(map,row2,(int)column2);
@@ -244,7 +244,7 @@ public class MyShips {
 				System.exit(0);
 			}
 			else {
-				map[(int)row2][column2] = ship;
+			    map[(int)row2][column2] = ship;
 			    map[(int)row3][column3] = ship;	
 			}	
 			checkAnglePoints(map,(int)row2,column2);
@@ -272,10 +272,10 @@ public class MyShips {
 		String typeHitField[][] = new String[10][10];
 		System.out.println("You have to positionize/arrange: \n" +
 		                   "  FOUR (4) cutters - single field; \n" + "  THREE (3) corvettes - double field; \n" + 
-				           "  TWO (2) destroyers - triple field; \n" + "  ONE (1) carrier - quadruple field \n" +
-				           "on a 10 X 10 grid map." + "\n");
+				   "  TWO (2) destroyers - triple field; \n" + "  ONE (1) carrier - quadruple field \n" +
+				   "on a 10 X 10 grid map." + "\n");
 		importCutters(map);
-	    importCorvettes(map);
+	        importCorvettes(map);
 		importDestroyers(map);
 		importCarrier(map);
 		System.out.println("Your ships on the map: \n");
@@ -303,12 +303,12 @@ public class MyShips {
 		}
 		System.out.println("\nChange players. Press 'ENTER': ");
 		try{System.in.read();}
-        catch(Exception e) {};
+                catch(Exception e) {};
 		for(int i = 0; i < 100; i ++) {
 			System.out.println();
 		}
-        int attempts = 0;
-        int cellsHit = 0;
+                int attempts = 0;
+                int cellsHit = 0;
 		for(int o = 0; o < 100; o ++) {
 			System.out.print("\nEnter the row coordiate of the cell you want to check for: ");
 			int row = in.nextInt()-1;
@@ -340,18 +340,18 @@ public class MyShips {
 						int check = 0;
 						for(int z = 0; z < cellNumber; z++) {
 							if((row == Xvalues[z]-1) && (column == Yvalues[z]-1)) {
-								cellsHit++;
-								check = 1; break;
+							    cellsHit++;
+							    check = 1; break;
 							}
 							else continue;
 						}
 						if(check == 1) {
-							typeHitField[row][column] = ship;
-							System.out.printf("%3s", ship);
+						    typeHitField[row][column] = ship;
+						    System.out.printf("%3s", ship);
 						}
 						if(check == 0) {
-							typeHitField[row][column] = water;
-							System.out.printf("%3s", water);
+						    typeHitField[row][column] = water;
+						    System.out.printf("%3s", water);
 						}
 					} 
 					System.out.printf("%3s", "");
