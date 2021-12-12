@@ -12,8 +12,8 @@ public class Ship {
 	}
 	public String toString() {
 		return "\nNumber of crew members: " + crewNumber +
-			   "\nLength of the ship (in meters): " + length +
-			   "\nSpeed of the ship (in knots): " + speed;
+		       "\nLength of the ship (in meters): " + length +
+		       "\nSpeed of the ship (in knots): " + speed;
 	}
 	public int getCrewNumber() {
 		return crewNumber;
