@@ -27,7 +27,7 @@ public class ProjectsCopy extends JFrame {
 		contentPane.setSize(742,550);
 		setLayout(null);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
-		ImageIcon img = new ImageIcon("адрес на файла по папки/informatics leaf frame.jpg");
+		ImageIcon img = new ImageIcon("Г Г¤Г°ГҐГ± Г­Г  ГґГ Г©Г«Г  ГЇГ® ГЇГ ГЇГЄГЁ/informatics leaf frame.jpg");
 		Image image = img.getImage();
 		Image temp_image = image.getScaledInstance(contentPane.getWidth(),contentPane.getHeight(),Image.SCALE_SMOOTH);
 		img = new ImageIcon(temp_image);
@@ -74,7 +74,7 @@ public class ProjectsCopy extends JFrame {
 				Eco frame1 = new Eco();
 				frame1.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 				getContentPane().setBackground(Color.white);
-				ImageIcon img2 = new ImageIcon("адрес на файла по папки/second window.jpg");
+				ImageIcon img2 = new ImageIcon("Г Г¤Г°ГҐГ± Г­Г  ГґГ Г©Г«Г  ГЇГ® ГЇГ ГЇГЄГЁ/second window.jpg");
 				Image image2 = img2.getImage();
 				Image temp_image2 = image2.getScaledInstance(795,530,Image.SCALE_DEFAULT);
 				img2 = new ImageIcon(temp_image2);
