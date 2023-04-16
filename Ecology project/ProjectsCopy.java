@@ -95,19 +95,19 @@ public class ProjectsCopy extends JFrame {
 					public void mouseExited(MouseEvent me) {
 						link1.setForeground(new Color(0,0,0));
 					}
-			        public void mouseClicked(MouseEvent me) { 
-			             Desktop d = Desktop.getDesktop();
-				         try {
-					         d.browse(new URI("www.globe.gov"));
-				         } catch (IOException e1) {
-					         e1.printStackTrace();
-				         } catch (URISyntaxException e1) {
-					         e1.printStackTrace();
-				         }   
-			          } 
-			    }); 
-			    background2.add(link1);
-		            link1.setVisible(true);
+			                public void mouseClicked(MouseEvent me) { 
+			                        Desktop d = Desktop.getDesktop();
+				                try {
+					            d.browse(new URI("www.globe.gov"));
+				                } catch (IOException e1) {
+					            e1.printStackTrace();
+				                } catch (URISyntaxException e1) {
+					            e1.printStackTrace();
+				                }   
+			                } 
+			       }); 
+			       background2.add(link1);
+		               link1.setVisible(true);
 			}
 		});
 		btnNewButton_1.setFont(new Font("Tahoma", Font.PLAIN, 17));
@@ -195,17 +195,17 @@ public class ProjectsCopy extends JFrame {
 		contentPane.add(btnNewButton_6);
 		
     }
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					ProjectsCopy frame = new ProjectsCopy();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
+    public static void main(String[] args) {
+	// TODO Auto-generated method stub
+	EventQueue.invokeLater(new Runnable() {
+		public void run() {
+		    try {
+			ProjectsCopy frame = new ProjectsCopy();
+			frame.setVisible(true);
+		    } catch (Exception e) {
+			e.printStackTrace();
+		    }
+		}
+	});
+    }
 }
