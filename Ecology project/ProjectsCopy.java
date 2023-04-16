@@ -106,8 +106,8 @@ public class ProjectsCopy extends JFrame {
 				         }   
 			          } 
 			    }); 
-				background2.add(link1);
-				link1.setVisible(true);
+			    background2.add(link1);
+		            link1.setVisible(true);
 			}
 		});
 		btnNewButton_1.setFont(new Font("Tahoma", Font.PLAIN, 17));
