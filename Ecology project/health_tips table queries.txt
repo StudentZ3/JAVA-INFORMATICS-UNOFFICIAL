@@ -1,0 +1,16 @@
+/*database name: ecology_project_db*/
+
+CREATE TABLE health_tips (
+    id int PRIMARY KEY,
+    tip_text VARCHAR (500)
+);
+INSERT INTO `health_tips` (`id`, `tip_text`) VALUES (1, 'Drink a minimum of 8 glasses of water a day.');
+INSERT INTO `health_tips` (`id`, `tip_text`) VALUES (2, 'Add more vegetables, fruits and lentils to your diet.');
+INSERT INTO `health_tips` (`id`, `tip_text`) VALUES (3, 'Include different coloured vegetables and fruit in your diet.');
+INSERT INTO `health_tips` (`id`, `tip_text`) VALUES (4, 'Improve your posture and sit up straight.');
+INSERT INTO `health_tips` (`id`, `tip_text`) VALUES (5, 'Eat more probiotic foods like Yogurt, Kefir and Kimchi.');
+INSERT INTO `health_tips` (`id`, `tip_text`) VALUES (6, 'Always chew your food properly. Don’t eat your food in a rush.');
+INSERT INTO `health_tips` (`id`, `tip_text`) VALUES (7, 'Take smaller bites while eating.');
+INSERT INTO `health_tips` (`id`, `tip_text`) VALUES (8, 'Avoid processed food.');
+INSERT INTO `health_tips` (`id`, `tip_text`) VALUES (9, 'Drink herbal tea or green tea.');
+INSERT INTO `health_tips` (`id`, `tip_text`) VALUES (10, 'Drink fruit infused water throughout the day.');
