@@ -17,7 +17,7 @@ public class Eco extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		getContentPane().setBackground(Color.white);
-		ImageIcon img2 = new ImageIcon("C:/1 ZZB TEMP/jSQL INFORMATICS/Group project/second window.jpg");
+		ImageIcon img2 = new ImageIcon("C:/...file path.../second window.jpg");
 		Image image2 = img2.getImage();
 		Image temp_image2 = image2.getScaledInstance(795,530,Image.SCALE_DEFAULT);
 		img2 = new ImageIcon(temp_image2);
