@@ -53,16 +53,16 @@ public class ProjectsCopyN extends JFrame {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection myCon = DriverManager.getConnection("jdbc:mysql://localhost:3306/ecology_project_db", "root", "");
-            Statement stmt = myCon.createStatement();
-	        String s = "SELECT tip_text FROM eco_tips WHERE id = '";
-	        Random ran = new Random();
-	        int num = ran.nextInt(10)+1;
-	        String n = Integer.toString(num);
-	        String s1 = s.concat(n);
-	        String s2 = s1.concat("'");
-            ResultSet rs = stmt.executeQuery(s2);
-            rs.next();
-            eco_tip = rs.getString(1);
+                        Statement stmt = myCon.createStatement();
+	                String s = "SELECT tip_text FROM eco_tips WHERE id = '";
+	                Random ran = new Random();
+	                int num = ran.nextInt(10)+1;
+	                String n = Integer.toString(num);
+	                String s1 = s.concat(n);
+	                String s2 = s1.concat("'");
+                        ResultSet rs = stmt.executeQuery(s2);
+                        rs.next();
+                        eco_tip = rs.getString(1);
 		} catch (Exception e2) {
 			e2.printStackTrace();
 		}
@@ -86,16 +86,16 @@ public class ProjectsCopyN extends JFrame {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection myCon = DriverManager.getConnection("jdbc:mysql://localhost:3306/ecology_project_db", "root", "");
-            Statement stmt = myCon.createStatement();
-	        String s = "SELECT tip_text FROM health_tips WHERE id = '";
-	        Random ran = new Random();
-	        int num = ran.nextInt(10)+1;
-	        String n = Integer.toString(num);
-	        String s1 = s.concat(n);
-	        String s2 = s1.concat("'");
-            ResultSet rs = stmt.executeQuery(s2);
-            rs.next();
-            health_tip = rs.getString(1);
+                        Statement stmt = myCon.createStatement();
+	                String s = "SELECT tip_text FROM health_tips WHERE id = '";
+	                Random ran = new Random();
+	                int num = ran.nextInt(10)+1;
+	                String n = Integer.toString(num);
+	                String s1 = s.concat(n);
+	                String s2 = s1.concat("'");
+                        ResultSet rs = stmt.executeQuery(s2);
+                        rs.next();
+                        health_tip = rs.getString(1);
 		} catch (Exception e2) {
 			e2.printStackTrace();
 		}
@@ -133,78 +133,78 @@ public class ProjectsCopyN extends JFrame {
 					public void mouseExited(MouseEvent me) {
 						link1.setForeground(new Color(0,0,0));
 					}
-			        public void mouseClicked(MouseEvent me) { 
-			             Desktop d = Desktop.getDesktop();
-				         try {
-					         d.browse(new URI("www.globe.gov"));
-				         } catch (IOException e1) {
-					         e1.printStackTrace();
-				         } catch (URISyntaxException e1) {
-					         e1.printStackTrace();
-				         }   
+			                public void mouseClicked(MouseEvent me) { 
+			                        Desktop d = Desktop.getDesktop();
+				        try {
+					        d.browse(new URI("www.globe.gov"));
+				        } catch (IOException e1) {
+					        e1.printStackTrace();
+				        } catch (URISyntaxException e1) {
+					        e1.printStackTrace();
+				        }   
 			          } 
 			    }); 
-				background2.add(link1);
-				link1.setVisible(true);
+			    background2.add(link1);
+			    link1.setVisible(true);
 				
-				JLabel link2 = new JLabel("www.nwf.org");
-				link2.setFont(new Font("Tahoma", Font.PLAIN, 16));
-				link2.setBounds(50, 400, 170, 30);
-				link2.addMouseListener(new MouseAdapter() { 
-					public void mouseEntered(MouseEvent me) { 
-						link2.setForeground(new Color(65,190,255));
-					}
-					public void mouseExited(MouseEvent me) {
-						link2.setForeground(new Color(0,0,0));
-					}
-			        public void mouseClicked(MouseEvent me) { 
-			             Desktop d = Desktop.getDesktop();
-				         try {
-					         d.browse(new URI("www.nwf.org"));
-				         } catch (IOException e1) {
-					         e1.printStackTrace();
-				         } catch (URISyntaxException e1) {
-					         e1.printStackTrace();
-				         }   
+			    JLabel link2 = new JLabel("www.nwf.org");
+			    link2.setFont(new Font("Tahoma", Font.PLAIN, 16));
+			    link2.setBounds(50, 400, 170, 30);
+			    link2.addMouseListener(new MouseAdapter() { 
+			          public void mouseEntered(MouseEvent me) { 
+					link2.setForeground(new Color(65,190,255));
+				  }
+				  public void mouseExited(MouseEvent me) {
+					link2.setForeground(new Color(0,0,0));
+				  }
+			          public void mouseClicked(MouseEvent me) { 
+			                Desktop d = Desktop.getDesktop();
+				        try {
+					      d.browse(new URI("www.nwf.org"));
+				        } catch (IOException e1) {
+					      e1.printStackTrace();
+				        } catch (URISyntaxException e1) {
+					      e1.printStackTrace();
+				        }   
 			          } 
 			    }); 
-				background2.add(link2);
-				link2.setVisible(true);
+			    background2.add(link2);
+			    link2.setVisible(true);
 				
-				JLabel link3 = new JLabel("www.earthforce.org");
-				link3.setFont(new Font("Tahoma", Font.PLAIN, 16));
-				link3.setBounds(50, 440, 170, 30);
-				link3.addMouseListener(new MouseAdapter() { 
-					public void mouseEntered(MouseEvent me) { 
-						link3.setForeground(new Color(65,190,255));
-					}
-					public void mouseExited(MouseEvent me) {
-						link3.setForeground(new Color(0,0,0));
-					}
+			    JLabel link3 = new JLabel("www.earthforce.org");
+			    link3.setFont(new Font("Tahoma", Font.PLAIN, 16));
+			    link3.setBounds(50, 440, 170, 30);
+			    link3.addMouseListener(new MouseAdapter() { 
+				public void mouseEntered(MouseEvent me) { 
+					link3.setForeground(new Color(65,190,255));
+				}
+				public void mouseExited(MouseEvent me) {
+					link3.setForeground(new Color(0,0,0));
+				}
 			        public void mouseClicked(MouseEvent me) { 
-			             Desktop d = Desktop.getDesktop();
-				         try {
-					         d.browse(new URI("www.earthforce.org"));
-				         } catch (IOException e1) {
-					         e1.printStackTrace();
-				         } catch (URISyntaxException e1) {
-					         e1.printStackTrace();
-				         }   
+			                Desktop d = Desktop.getDesktop();
+				        try {
+					      d.browse(new URI("www.earthforce.org"));
+				        } catch (IOException e1) {
+					      e1.printStackTrace();
+				        } catch (URISyntaxException e1) {
+					      e1.printStackTrace();
+				        }   
 			          } 
 			    }); 
-				background2.add(link3);
-				link3.setVisible(true);
+		            background2.add(link3);
+			    link3.setVisible(true);
 				
-				JLabel link4 = new JLabel("www.stroudcenter.org");
-				link4.setFont(new Font("Tahoma", Font.PLAIN, 16));
-				link4.setBounds(50, 480, 170, 30);
-				link4.addMouseListener(new MouseAdapter() { 
-					public void mouseEntered(MouseEvent me) { 
-						link4.setForeground(new Color(65,190,255));
-					}
-					public void mouseExited(MouseEvent me) {
-						link4.setForeground(new Color(0,0,0));
-					}
+			    JLabel link4 = new JLabel("www.stroudcenter.org");
+			    link4.setFont(new Font("Tahoma", Font.PLAIN, 16));
+			    link4.setBounds(50, 480, 170, 30);
+			    link4.addMouseListener(new MouseAdapter() { 
+				public void mouseEntered(MouseEvent me) { 
+					link4.setForeground(new Color(65,190,255));
+				}
+				public void mouseExited(MouseEvent me) {
+					link4.setForeground(new Color(0,0,0));
+				}
 			        public void mouseClicked(MouseEvent me) { 
 			             Desktop d = Desktop.getDesktop();
 				         try {
