@@ -30,7 +30,7 @@ public class Initiatives extends JFrame {
 		contentPane.setLayout(null);
 		
 		getContentPane().setBackground(Color.white);
-		ImageIcon img3 = new ImageIcon("C:/1 ZZB TEMP/jSQL INFORMATICS/Group project/third window.jpg");
+		ImageIcon img3 = new ImageIcon("C:/...file path.../third window.jpg");
 		Image image3 = img3.getImage();
 		Image temp_image3 = image3.getScaledInstance(760,530,Image.SCALE_DEFAULT);
 		img3.setImage(temp_image3);
@@ -41,19 +41,19 @@ public class Initiatives extends JFrame {
 		contentPane.repaint();
 		contentPane.setVisible(true);
 		
-		ImageIcon arrow = new ImageIcon("C:/1 ZZB TEMP/jSQL INFORMATICS/Group project/arrow.jpg");
+		ImageIcon arrow = new ImageIcon("C:/...file path.../arrow.jpg");
 		
-		ImageIcon img31 = new ImageIcon("C:/1 ZZB TEMP/jSQL INFORMATICS/Group project/third.first window.jpg");
+		ImageIcon img31 = new ImageIcon("C:/...file path.../third.first window.jpg");
 		Image image31 = img31.getImage();
 		Image temp_image31 = image31.getScaledInstance(730,530,Image.SCALE_DEFAULT);
 		img31.setImage(temp_image31);
 		
-		ImageIcon img32 = new ImageIcon("C:/1 ZZB TEMP/jSQL INFORMATICS/Group project/third.second window.jpg");
+		ImageIcon img32 = new ImageIcon("C:/...file path.../third.second window.jpg");
 		Image image32 = img32.getImage();
 		Image temp_image32 = image32.getScaledInstance(730,530,Image.SCALE_DEFAULT);
 		img32.setImage(temp_image32);
 		
-		ImageIcon img33 = new ImageIcon("C:/1 ZZB TEMP/jSQL INFORMATICS/Group project/third.third window.jpg");
+		ImageIcon img33 = new ImageIcon("C:/...file path.../third.third window.jpg");
 		Image image33 = img33.getImage();
 		Image temp_image33 = image33.getScaledInstance(730,520,Image.SCALE_DEFAULT);
 		img33.setImage(temp_image33);
