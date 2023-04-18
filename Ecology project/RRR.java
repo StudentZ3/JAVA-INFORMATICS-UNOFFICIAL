@@ -1,14 +1,12 @@
 package eco;
 import javax.swing.*;
 import javax.swing.border.LineBorder;
-
 import java.awt.*;
-
 @SuppressWarnings("serial")
 public class RRR extends JFrame {
 
 	private  String[] ways = { "Way 1", "Way 2", "Way 3", "Way 4", "Way 5", "Way 6" };
-    private  String[] texts = { "One way to reduce is to reuse. Instead of using plastic bags, bring reusable bags and Tupperware when going shopping or packing food or leftovers.", 
+        private  String[] texts = { "One way to reduce is to reuse. Instead of using plastic bags, bring reusable bags and Tupperware when going shopping or packing food or leftovers.", 
     		"Shop responsibly. When going out, purchase items that are easy to recycle. Avoid items that are individually wrapped or in single servings. Buying in bulk helps to reduce waste.", 
     		"Composting is your friend. Create a compost bin and throw food scraps and various yard waste into your compost bin. You can use leaves and yard trimmings to supplement the compost.", 
     		"Start recycling. Did you know that you can save 9 cubic yards of landfill space by recycling only one ton of cardboard? Over 87% of citizens in the U.S. are able to have their recycling picked up curbside. Utilizing trash removal and recycling services can help you to manage waste effectively.", 
