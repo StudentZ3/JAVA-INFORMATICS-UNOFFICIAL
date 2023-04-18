@@ -19,7 +19,7 @@ public class Bulgaria extends JFrame {
 		contentPane.setBackground(new Color(255,255,255));
 		
 		JLabel lblNewLabel_6= new JLabel(new ImageIcon(new ImageIcon(
-				"C:/1 ZZB TEMP/jSQL INFORMATICS/Group project/welcome to Bulgaria.png").getImage().getScaledInstance(506,150,Image.SCALE_DEFAULT)));
+				"C:/...file path.../welcome to Bulgaria.png").getImage().getScaledInstance(506,150,Image.SCALE_DEFAULT)));
 		lblNewLabel_6.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		lblNewLabel_6.setBounds(68, 11, 506, 150);
 		contentPane.add(lblNewLabel_6);
