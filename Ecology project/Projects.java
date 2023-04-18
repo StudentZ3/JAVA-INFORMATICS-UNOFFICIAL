@@ -24,7 +24,7 @@ public class Projects extends JFrame {
 		contentPane.setSize(742,550);
 		setLayout(null);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
-		ImageIcon img = new ImageIcon("C:/1 ZZB TEMP/jSQL INFORMATICS/Group project/informatics leaf frame.jpg");
+		ImageIcon img = new ImageIcon("C:/...file path.../informatics leaf frame.jpg");
 		Image image = img.getImage();
 		Image temp_image = image.getScaledInstance(contentPane.getWidth(),contentPane.getHeight(),Image.SCALE_SMOOTH);
 		img = new ImageIcon(temp_image);
