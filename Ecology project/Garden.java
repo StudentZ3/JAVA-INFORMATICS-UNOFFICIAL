@@ -1,10 +1,7 @@
 package eco;
-import java.awt.Color;
-import java.awt.Font;
-
+import java.awt.*;
 import javax.swing.*;
-import javax.swing.border.EmptyBorder;
-import javax.swing.border.LineBorder;
+import javax.swing.border.*;
 
 @SuppressWarnings("serial")
 public class Garden extends JFrame {
@@ -99,7 +96,7 @@ public class Garden extends JFrame {
 				instructionLabel.setText("Starting from seed takes longer, and there's a higher risk of failure. Seedlings are recommended, but growing plants from scratch can be fun too. Both options have their benefits.");
 				break;
 			case 5:
-				stepLabel.setText("Step 6. Water’s where it’s at.");
+				stepLabel.setText("Step 6. Waterâ€™s where itâ€™s at.");
 				instructionLabel.setText("You can test your gardening skills with manual or automatic watering. Advanced watering systems are available, but they're expensive. Manual watering is cheaper. Water level monitors are available if you're worried about over or under-watering.");
 				break;
 			case 6:
