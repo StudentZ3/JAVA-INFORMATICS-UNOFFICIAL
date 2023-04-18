@@ -31,7 +31,7 @@ public class RRR extends JFrame {
         contentPane.setBackground(new Color(255,255,255));
         
         JLabel picLabel = new JLabel(new ImageIcon(new ImageIcon(
-        		"C:/1 ZZB TEMP/jSQL INFORMATICS/Group project/eco_kids.jpg").getImage().getScaledInstance(400, 300, Image.SCALE_DEFAULT)));
+        		"C:/...file path.../eco_kids.jpg").getImage().getScaledInstance(400, 300, Image.SCALE_DEFAULT)));
         picLabel.setBounds(10, 20, 450, 300);
         contentPane.add(picLabel);
         
