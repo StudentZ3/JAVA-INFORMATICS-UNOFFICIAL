@@ -16,10 +16,10 @@ public class Compost extends JFrame implements ActionListener {
 
     private String[] steps = { "Step 1: Combine Green and Brown Materials", "Step 2: Water Your Compost Pile", "Step 3: Stir Your Compost Pile",
             "Step 4: Feed Your Garden with Compost" };
-    private String[] images = { "C:/1 ZZB TEMP/jSQL INFORMATICS/Group project/compost1.jpg", 
-    		"C:/1 ZZB TEMP/jSQL INFORMATICS/Group project/compost2.jpg",
-    		"C:/1 ZZB TEMP/jSQL INFORMATICS/Group project/compost3.jpg", 
-    		"C:/1 ZZB TEMP/jSQL INFORMATICS/Group project/compost4.jpg" };
+    private String[] images = { "C:/...file path.../compost1.jpg", 
+    		"C:/...file path.../compost2.jpg",
+    		"C:/...file path.../compost3.jpg", 
+    		"C:/...file path.../compost4.jpg" };
     private int currentStep = 0;
 
     public Compost() {
