@@ -3,6 +3,9 @@ import java.sql.*;
 import java.util.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.io.File;
+import java.io.IOException;
+
 import javax.swing.*;
 import javax.swing.border.*;
 import javax.swing.ImageIcon;
@@ -10,7 +13,7 @@ import javax.swing.ImageIcon;
 @SuppressWarnings("serial")
 public class Projects extends JFrame {
 
-	private JPanel contentPane;
+	private static JPanel contentPane;
 	public Projects() {
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -23,7 +26,7 @@ public class Projects extends JFrame {
 		contentPane.setSize(742,550);
 		setLayout(null);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
-		ImageIcon img = new ImageIcon("C:/...file path.../informatics leaf frame.jpg");
+		ImageIcon img = new ImageIcon("C:/1 ZZB TEMP/jSQL INFORMATICS/Group project/informatics leaf frame.jpg");
 		Image image = img.getImage();
 		Image temp_image = image.getScaledInstance(contentPane.getWidth(),contentPane.getHeight(),Image.SCALE_SMOOTH);
 		img = new ImageIcon(temp_image);
@@ -192,6 +195,29 @@ public class Projects extends JFrame {
 		btnNewButton_6.setFont(new Font("Tahoma", Font.PLAIN, 17));
 		btnNewButton_6.setBounds(480, 270, 150, 80);
 		contentPane.add(btnNewButton_6);
+		/**/
+		JLabel linkX = new JLabel("C:/1 ZZB TEMP/jSQL INFORMATICS/Group project/eco special\\main.html");
+		linkX.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		linkX.setBounds(400, 450, 250, 40);
+		linkX.addMouseListener(new MouseAdapter() { 
+			public void mouseEntered(MouseEvent me) { 
+				linkX.setForeground(new Color(65,190,255));
+			}
+			public void mouseExited(MouseEvent me) {
+				linkX.setForeground(new Color(0,0,0));
+			}
+	        public void mouseClicked(MouseEvent me) { 
+	             Desktop d = Desktop.getDesktop();
+		         try {
+			         d.browse(new File(linkX.getText()).toURI());
+		         } catch (IOException e1) {
+			         e1.printStackTrace();
+		         }
+	          } 
+	    }); 
+		contentPane.add(linkX);
+		linkX.setVisible(true);
+		/**/
     }
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
