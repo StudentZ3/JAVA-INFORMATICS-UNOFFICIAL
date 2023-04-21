@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Покана за бал</title>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js'></script>
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <style>
+        @font-face {
+            font-family: font;
+            src: url(./font/OTF\,\ TTF/TOYZ.otf);
+        }
+        #invitation,
+        body,
+        html {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0 auto;
+            overflow: hidden;
+            user-select: none;
+            font-family: font;
+            color: white;
+            background-image: url(./img/background.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #question {
+            text-align: center;
+            font-size: 20vh;
+            margin-top: 5vh;
+        }
+
+        button {
+            border-radius: 30%;
+            width: 25vw;
+            height: 20vh;
+            margin-top: 10vh;
+            margin-left: 15vw;
+            font-size: 15vh;
+            font-family: font;
+        }
+
+        #yes {
+            background-color: green;
+        }
+
+        #no {
+            background-color: red;
+            position: absolute;
+        }
+    </style>
+    <div id="invitation">
+        <div id="question">
+            Ще дойдете ли с нас на бала?
+        </div>
+        <div id="answers">
+            <button id="yes" onclick="location.href = './yes.html';" type="button">Да!</button>
+            <button id="no" onclick="location.href = './main.html';" type="button">Не!</button>
+        </div>
+    </div>
+    <script>
+        const button = document.getElementById("no");
+
+        const animateMove = (element, prop, pixels) =>
+            anime({
+                targets: element,
+                [prop]: `${pixels}px`,
+                easing: "easeOutCirc"
+            });
+
+        ["mouseover", "click"].forEach(function (el) {
+            button.addEventListener(el, function (event) {
+                const top = getRandomNumber(window.innerHeight - this.offsetHeight);
+                const left = getRandomNumber(window.innerWidth - this.offsetWidth);
+
+                animateMove(this, "left", left).play();
+                animateMove(this, "top", top).play();
+            });
+        });
+
+        const getRandomNumber = (num) => {
+            return Math.floor(Math.random() * (num + 1));
+        };
+
+    </script>
+</body>
+
+</html>
